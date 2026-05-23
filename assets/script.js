@@ -76,18 +76,18 @@ window.addEventListener("load", () => {
 });
 
 // ================= GSAP ANIMATIONS =================
-gsap.from(".main-title", {
-  y: 100,
-  opacity: 0,
-  duration: 1.5,
-});
+// gsap.from(".main-title", {
+//   y: 100,
+//   opacity: 0,
+//   duration: 1.5,
+// });
 
-gsap.from(".subtitle", {
-  y: 50,
-  opacity: 0,
-  duration: 1,
-  delay: 1,
-});
+// gsap.from(".subtitle", {
+//   y: 50,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 1,
+// });
 
 // ================= MOBILE MENU TOGGLE =================
 const menuToggle = document.getElementById("menuToggle");
@@ -523,5 +523,3 @@ giftModal.addEventListener("click", (e) => {
 giftReveal.addEventListener("click", () => {
     giftReveal.style.display = "none";
 });
-
-
