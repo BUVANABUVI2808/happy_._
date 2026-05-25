@@ -222,10 +222,7 @@ if (SpeechRecognition) {
 // Check wish text
 function checkWish(text) {
   const lowerText = text.toLowerCase().trim();
-  if (
-    lowerText.includes("Makley") ||
-    lowerText.includes("makley")
-  ) {
+  if (lowerText.includes("Makley") || lowerText.includes("makley")) {
     showStatus("💖I Love You! Your wish has been unlocked!", "success");
     triggerCelebration();
     setTimeout(() => {
@@ -391,24 +388,24 @@ const video = document.getElementById("birthdayVideo");
 
 // OPEN VIDEO
 musicBtn.addEventListener("click", () => {
-    videoModal.style.display = "flex";
-    video.play();
+  videoModal.style.display = "flex";
+  video.play();
 });
 
 // CLOSE VIDEO
 closeVideo.addEventListener("click", () => {
-    video.pause();
-    video.currentTime = 0;
-    videoModal.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+  videoModal.style.display = "none";
 });
 
 // CLOSE ON BACKDROP CLICK
 videoModal.addEventListener("click", (e) => {
-    if (e.target === videoModal) {
-        video.pause();
-        video.currentTime = 0;
-        videoModal.style.display = "none";
-    }
+  if (e.target === videoModal) {
+    video.pause();
+    video.currentTime = 0;
+    videoModal.style.display = "none";
+  }
 });
 // ================= SURPRISE BUTTON =================
 const surpriseBtn = document.getElementById("surpriseBtn");
@@ -485,41 +482,40 @@ const giftReveal = document.getElementById("giftReveal");
 const correctPassword = "2004"; // change this
 
 giftBox.addEventListener("click", () => {
-    giftModal.style.display = "flex";
+  giftModal.style.display = "flex";
 });
 
 function checkGiftPassword() {
-    const input = document.getElementById("giftPassword").value;
-    const error = document.getElementById("giftError");
+  const input = document.getElementById("giftPassword").value;
+  const error = document.getElementById("giftError");
 
-    if (input === correctPassword) {
-        giftModal.style.display = "none";
+  if (input === correctPassword) {
+    giftModal.style.display = "none";
 
-        giftReveal.style.display = "flex";
+    giftReveal.style.display = "flex";
 
-        const audio = document.getElementById("giftMusic");
-        audio.play();
+    const audio = document.getElementById("giftMusic");
+    audio.play();
 
-        gsap.from(".reveal-card", {
-            scale: 0.5,
-            opacity: 0,
-            duration: 0.8,
-            ease: "power2.out"
-        });
-
-    } else {
-        error.innerText = "❌ Wrong password, try again ❤️";
-    }
+    gsap.from(".reveal-card", {
+      scale: 0.5,
+      opacity: 0,
+      duration: 0.8,
+      ease: "power2.out",
+    });
+  } else {
+    error.innerText = "❌ Wrong password, try again ❤️";
+  }
 }
 
 // close modal on outside click
 giftModal.addEventListener("click", (e) => {
-    if (e.target === giftModal) {
-        giftModal.style.display = "none";
-    }
+  if (e.target === giftModal) {
+    giftModal.style.display = "none";
+  }
 });
 
 // close reveal on click
 giftReveal.addEventListener("click", () => {
-    giftReveal.style.display = "none";
+  giftReveal.style.display = "none";
 });
