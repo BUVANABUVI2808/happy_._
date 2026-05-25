@@ -323,7 +323,7 @@ function showSecretMessage() {
 const typewriterElement = document.getElementById("typewriter");
 const typewriterText = `Dear My Love,
 
-From the moment I saw your smile on June 1st, 2022, I knew my life was going to change forever. And when you said "Yes" on June 7th, 2022, I became the happiest person alive.
+From the moment I saw your smile on June 1st, 2022, I knew my life was going to change forever. And when you said "Yes", I became the happiest person alive.
 
 Every day with you feels like a dream come true. You are my everything – my love, my life, my reason to smile. Your presence makes the ordinary moments become extraordinary.
 
