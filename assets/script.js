@@ -467,6 +467,7 @@ if (counter) {
     });
   });
 
+  
   observer2.observe(counter);
 }
 
