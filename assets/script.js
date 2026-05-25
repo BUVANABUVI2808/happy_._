@@ -460,6 +460,7 @@ if (counter) {
             count = target;
             clearInterval(interval);
           }
+
           counter.innerHTML = Math.floor(count);
         }, 30);
         observer2.unobserve(entry.target);
@@ -467,11 +468,9 @@ if (counter) {
     });
   });
 
-  
+
   observer2.observe(counter);
 }
-
-// ================= INITIALIZE ON DOM READY =================
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Website loaded! 💖");
 });
