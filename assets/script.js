@@ -445,7 +445,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// ================= COUNTER ANIMATION =================
 const counter = document.getElementById("counter");
 if (counter) {
   let count = 0;
